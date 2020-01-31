@@ -9,3 +9,5 @@ c:\users\aluno\documents\visual studio 2015\Projects\Recursos humanos\Rh\obj\Deb
 c:\users\aluno\documents\visual studio 2015\Projects\Recursos humanos\Rh\obj\Debug\Rh.pdb
 c:\users\aluno\documents\visual studio 2015\Projects\Recursos humanos\Rh\bin\Debug\MySql.Data.dll
 C:\Users\Aluno\Documents\Visual Studio 2015\Projects\Recursos humanos\Rh\obj\Debug\Rh.Menu.resources
+C:\Users\Aluno\Documents\Visual Studio 2015\Projects\Recursos humanos\Rh\obj\Debug\Rh.view.usuario.resources
+C:\Users\Aluno\Documents\Visual Studio 2015\Projects\Recursos humanos\Rh\obj\Debug\Rh.view.frmCusuario.resources
