@@ -20,7 +20,6 @@ namespace Rh
         {
             Initialize();
         }
-
         //Initialize values
         private void Initialize()
         {
@@ -35,7 +34,6 @@ namespace Rh
 
             connection = new MySqlConnection(connectionString);
         }
-
         //open connection to database
         public bool OpenConnection()
         {
@@ -73,7 +71,6 @@ namespace Rh
                 return false;
             }
         }
-
         //Executar SQL
         public int execute(String sql)
         {

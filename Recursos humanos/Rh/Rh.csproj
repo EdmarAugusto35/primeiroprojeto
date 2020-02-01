@@ -53,11 +53,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\Funcionario.cs" />
+    <Compile Include="classes\perfil.cs" />
     <Compile Include="view\frmCusuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\frmCusuario.Designer.cs">
       <DependentUpon>frmCusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\frmsetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\frmsetor.Designer.cs">
+      <DependentUpon>frmsetor.cs</DependentUpon>
     </Compile>
     <Compile Include="view\Menu.cs">
       <SubType>Form</SubType>
@@ -85,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="view\frmCusuario.resx">
       <DependentUpon>frmCusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\frmsetor.resx">
+      <DependentUpon>frmsetor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
