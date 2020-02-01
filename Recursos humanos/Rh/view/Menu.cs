@@ -18,32 +18,32 @@ namespace Rh
         {
             InitializeComponent();
         }
-
         private void btnfun_Click(object sender, EventArgs e)
         {
 
-        }
-        
+        }   
         private void btnusu_Click(object sender, EventArgs e)
         {
             usuario usu = new usuario();
             usu.Show();
         }
-
         private void tSair_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void tfun_Click(object sender, EventArgs e)
         {
 
         }
-
         private void tu_Click(object sender, EventArgs e)
         {
             frmCusuario Cusu = new frmCusuario();
             Cusu.Show();
+        }
+        private void btnsetor_Click(object sender, EventArgs e)
+        {
+            frmsetor setor = new frmsetor();
+            setor.Show();
         }
     }
 }

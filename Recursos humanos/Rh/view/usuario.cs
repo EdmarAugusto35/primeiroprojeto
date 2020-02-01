@@ -27,7 +27,6 @@ namespace Rh.view
             obju.id = int.Parse(txtid.Text.Trim());
             obju.nome = txtnome.Text;
         }
-
         private void btnProcurar_Click(object sender, EventArgs e)
         {
             lerdados();
@@ -88,12 +87,10 @@ namespace Rh.view
             frmUsu.DataSource = null;
             frmUsu.DataSource = listconsulta;
         }
-
         private void usuario_Load(object sender, EventArgs e)
         {
             atualizarGrid();
         }
-
         private void frmUsu_CellClick(object sender, DataGridViewCellEventArgs e)
         {
           

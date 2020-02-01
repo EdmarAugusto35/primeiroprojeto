@@ -82,6 +82,7 @@
             this.btnsetor.TabIndex = 0;
             this.btnsetor.Text = "Setor";
             this.btnsetor.UseVisualStyleBackColor = true;
+            this.btnsetor.Click += new System.EventHandler(this.btnsetor_Click);
             // 
             // btnper
             // 
@@ -137,27 +138,27 @@
             // tfun
             // 
             this.tfun.Name = "tfun";
-            this.tfun.Size = new System.Drawing.Size(152, 22);
+            this.tfun.Size = new System.Drawing.Size(142, 22);
             this.tfun.Text = "Funcionarios";
             this.tfun.Click += new System.EventHandler(this.tfun_Click);
             // 
             // tpe
             // 
             this.tpe.Name = "tpe";
-            this.tpe.Size = new System.Drawing.Size(152, 22);
+            this.tpe.Size = new System.Drawing.Size(142, 22);
             this.tpe.Text = "Perfil";
             // 
             // tu
             // 
             this.tu.Name = "tu";
-            this.tu.Size = new System.Drawing.Size(152, 22);
+            this.tu.Size = new System.Drawing.Size(142, 22);
             this.tu.Text = "Usuario";
             this.tu.Click += new System.EventHandler(this.tu_Click);
             // 
             // ts
             // 
             this.ts.Name = "ts";
-            this.ts.Size = new System.Drawing.Size(152, 22);
+            this.ts.Size = new System.Drawing.Size(142, 22);
             this.ts.Text = "Setor";
             // 
             // tSair

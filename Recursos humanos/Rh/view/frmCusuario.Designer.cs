@@ -35,22 +35,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.txtnome = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
-            this.txtsenha = new System.Windows.Forms.TextBox();
-            this.txtusuario = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.cmbstatus = new System.Windows.Forms.ComboBox();
             this.cmbidperfil = new System.Windows.Forms.ComboBox();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtusuario = new System.Windows.Forms.TextBox();
+            this.txtsenha = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(12, 245);
+            this.btnSalvar.Location = new System.Drawing.Point(12, 215);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(333, 245);
+            this.btncancel.Location = new System.Drawing.Point(332, 215);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(75, 23);
             this.btncancel.TabIndex = 1;
@@ -106,7 +106,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cmbStatus);
+            this.groupBox1.Controls.Add(this.cmbstatus);
             this.groupBox1.Controls.Add(this.cmbidperfil);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -122,55 +122,38 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 15);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(396, 224);
+            this.groupBox1.Size = new System.Drawing.Size(396, 194);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // txtid
+            // cmbstatus
             // 
-            this.txtid.Location = new System.Drawing.Point(39, 28);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(100, 20);
-            this.txtid.TabIndex = 6;
+            this.cmbstatus.FormattingEnabled = true;
+            this.cmbstatus.Location = new System.Drawing.Point(59, 161);
+            this.cmbstatus.Name = "cmbstatus";
+            this.cmbstatus.Size = new System.Drawing.Size(121, 21);
+            this.cmbstatus.TabIndex = 16;
+            this.cmbstatus.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // txtnome
+            // cmbidperfil
             // 
-            this.txtnome.Location = new System.Drawing.Point(60, 55);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(314, 20);
-            this.txtnome.TabIndex = 7;
+            this.cmbidperfil.FormattingEnabled = true;
+            this.cmbidperfil.Location = new System.Drawing.Point(235, 165);
+            this.cmbidperfil.Name = "cmbidperfil";
+            this.cmbidperfil.Size = new System.Drawing.Size(139, 21);
+            this.cmbidperfil.TabIndex = 15;
+            this.cmbidperfil.SelectedIndexChanged += new System.EventHandler(this.cmbidperfil_SelectedIndexChanged);
             // 
-            // txtemail
+            // label7
             // 
-            this.txtemail.Location = new System.Drawing.Point(60, 83);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(314, 20);
-            this.txtemail.TabIndex = 8;
-            // 
-            // txtsenha
-            // 
-            this.txtsenha.Location = new System.Drawing.Point(60, 135);
-            this.txtsenha.Name = "txtsenha";
-            this.txtsenha.Size = new System.Drawing.Size(314, 20);
-            this.txtsenha.TabIndex = 9;
-            // 
-            // txtusuario
-            // 
-            this.txtusuario.Location = new System.Drawing.Point(60, 109);
-            this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(314, 20);
-            this.txtusuario.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Usuario";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(186, 164);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "id_perfil";
             // 
             // label6
             // 
@@ -181,30 +164,49 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Status";
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "id_perfil";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Usuario";
             // 
-            // cmbidperfil
+            // txtusuario
             // 
-            this.cmbidperfil.FormattingEnabled = true;
-            this.cmbidperfil.Location = new System.Drawing.Point(59, 191);
-            this.cmbidperfil.Name = "cmbidperfil";
-            this.cmbidperfil.Size = new System.Drawing.Size(315, 21);
-            this.cmbidperfil.TabIndex = 15;
+            this.txtusuario.Location = new System.Drawing.Point(60, 109);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(314, 20);
+            this.txtusuario.TabIndex = 10;
             // 
-            // cmbStatus
+            // txtsenha
             // 
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(60, 164);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(314, 21);
-            this.cmbStatus.TabIndex = 16;
+            this.txtsenha.Location = new System.Drawing.Point(60, 135);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.Size = new System.Drawing.Size(314, 20);
+            this.txtsenha.TabIndex = 9;
+            // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(60, 83);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(314, 20);
+            this.txtemail.TabIndex = 8;
+            // 
+            // txtnome
+            // 
+            this.txtnome.Location = new System.Drawing.Point(60, 55);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(314, 20);
+            this.txtnome.TabIndex = 7;
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(39, 28);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(100, 20);
+            this.txtid.TabIndex = 6;
             // 
             // frmCusuario
             // 
@@ -216,6 +218,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCusuario";
             this.Text = "frmCusuario";
+            this.Load += new System.EventHandler(this.frmCusuario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -240,6 +243,6 @@
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.ComboBox cmbidperfil;
-        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.ComboBox cmbstatus;
     }
 }
